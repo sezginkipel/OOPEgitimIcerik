@@ -15,5 +15,6 @@ namespace WebKutuphane.Data
         }
 
         public DbSet<WebKutuphane.Models.Books> Books { get; set; } = default!;
+        public DbSet<WebKutuphane.Models.Genres> Genres { get; set; } = default!;
     }
 }

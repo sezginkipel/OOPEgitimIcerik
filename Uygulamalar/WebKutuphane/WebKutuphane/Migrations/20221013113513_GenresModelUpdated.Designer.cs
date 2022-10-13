@@ -12,8 +12,8 @@ using WebKutuphane.Data;
 namespace WebKutuphane.Migrations
 {
     [DbContext(typeof(WebKutuphaneContext))]
-    [Migration("20221012120114_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20221013113513_GenresModelUpdated")]
+    partial class GenresModelUpdated
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,21 +35,51 @@ namespace WebKutuphane.Migrations
                     b.Property<string>("Author")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Genre")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("GenresId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("UpdatedTime")
+                    b.Property<DateTime?>("UpdatedTime")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("GenresId");
+
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("WebKutuphane.Models.Genres", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genres");
+                });
+
+            modelBuilder.Entity("WebKutuphane.Models.Books", b =>
+                {
+                    b.HasOne("WebKutuphane.Models.Genres", "Genres")
+                        .WithMany()
+                        .HasForeignKey("GenresId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Genres");
                 });
 #pragma warning restore 612, 618
         }

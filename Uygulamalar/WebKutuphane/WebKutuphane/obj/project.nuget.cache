@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T6LV/tZ/Smes0ojF6xt/WN7JmjY7ujR0cBzVB88AQvaf8zsC6l2KopwpY2rI1qqek+kxTT5iv7HOpZIHKc/CoA==",
+  "dgSpecHash": "RmE70d4+gkAL0PEyDjBkC+KN7R5XfB4QDTTwQhznTIUGstQ+cAZ4g2xZF/UI+2Ud2DY+yb+fRR+xAeyg80dRXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ALKU\\Desktop\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
+  "projectFilePath": "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ALKU\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ALKU\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

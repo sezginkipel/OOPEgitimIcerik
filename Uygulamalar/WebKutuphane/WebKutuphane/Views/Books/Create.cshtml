@@ -1,11 +1,8 @@
 ﻿@model WebKutuphane.Models.Books
 
 @{
-
     ViewData["Title"] = "Create";
     Layout = "../Shared/_Layout.cshtml";
-
-
 }
 @Html.Partial("../Components/_Navbar.cshtml")
 
@@ -23,9 +20,9 @@
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Genre" class="control-label"></label>
-                <input asp-for="Genre" class="form-control" />
-                <span asp-validation-for="Genre" class="text-danger"></span>
+                <label asp-for="GenreId" class="control-label"></label>
+                <input asp-for="GenreId" class="form-control" />
+                <span asp-validation-for="GenreId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Author" class="control-label"></label>

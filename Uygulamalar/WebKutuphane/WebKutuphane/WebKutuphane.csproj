@@ -21,6 +21,8 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Views\Genres\" />
   </ItemGroup>
 
 </Project>

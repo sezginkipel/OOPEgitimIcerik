@@ -22,7 +22,7 @@ namespace WebKutuphane.Controllers
         // GET: Books
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Books.ToListAsync());
+            return View(await _context.Books.ToListAsync());
         }
 
         // GET: Books/Details/5
@@ -55,7 +55,7 @@ namespace WebKutuphane.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Genre,Author,CreatedDate,UpdatedTime")] Books books)
+        public async Task<IActionResult> Create([Bind("Id,Title,Author,GenreId,CreatedDate,UpdatedTime")] Books books)
         {
             if (ModelState.IsValid)
             {
@@ -87,14 +87,14 @@ namespace WebKutuphane.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Genre,Author,CreatedDate,UpdatedTime")] Books books)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,GenreId,CreatedDate,UpdatedTime")] Books books)
         {
             if (id != books.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (1==1)
             {
                 try
                 {

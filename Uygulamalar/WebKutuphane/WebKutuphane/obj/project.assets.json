@@ -9786,11 +9786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ALKU\\Desktop\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
+      "projectUniqueName": "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
       "projectName": "WebKutuphane",
-      "projectPath": "C:\\Users\\ALKU\\Desktop\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
+      "projectPath": "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
       "packagesPath": "C:\\Users\\ALKU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ALKU\\Desktop\\WebKutuphane\\WebKutuphane\\obj\\",
+      "outputPath": "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
