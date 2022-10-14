@@ -57,14 +57,15 @@ namespace WebKutuphane.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Author,Genres")]  Books books)
+        public async Task<IActionResult> Create(Books books)
         {
-          
+            if (ModelState.IsValid)
+            {
                 _context.Add(books);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            
-           // return View(books);
+            }
+            return View(books);
         }
 
         // GET: Books/Edit/5
@@ -76,6 +77,20 @@ namespace WebKutuphane.Controllers
             }
 
             var books = await _context.Books.Include(m => m.Genres).FirstOrDefaultAsync(m => m.Id == id);
+            var genres = await _context.Genres.FirstOrDefaultAsync(m => m.Id == books.Genres.Id);
+
+            var booksModel = new BooksViewModel()
+            {
+                BookId = books.Id,
+                GenreId = books.Genres.Id,
+
+                Title = books.Title,
+                Author = books.Author,
+                GenreName = books.Genres.Name,
+
+                BooksRef = books,
+                GenresRef = genres
+            };
             /*
              var books kısmında FindAsync kullanınca Include çalışmıyor, çünkü FindAsync metodu Dbset
             içerisinden geliyor ancak Include metodu IQueryable içerisinden geliyor ve birlikte kullanılamıyorlar.  
@@ -86,7 +101,7 @@ namespace WebKutuphane.Controllers
             {
                 return NotFound();
             }
-            return View(books);
+            return View(booksModel);
         }
 
         // POST: Books/Edit/5
@@ -94,15 +109,15 @@ namespace WebKutuphane.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,Genres")] Books books)
+        public async Task<IActionResult> Edit(int id, Books books)
         {
-         
+
             if (id != books.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (1==1)
             {
                 try
                 {
@@ -157,14 +172,16 @@ namespace WebKutuphane.Controllers
             {
                 _context.Books.Remove(books);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool BooksExists(int id)
         {
-          return _context.Books.Any(e => e.Id == id);
+            return _context.Books.Any(e => e.Id == id);
         }
     }
+
+
 }
