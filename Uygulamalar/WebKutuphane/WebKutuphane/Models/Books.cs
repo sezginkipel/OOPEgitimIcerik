@@ -9,7 +9,7 @@ namespace WebKutuphane.Models
         public string? Title { get; set; }
         public string? Author { get; set; }
 
-        public int GenreId { get; set; }
+       // public int GenreId { get; set; }
         public Genres Genres { get; set; }
 
         [DataType(DataType.Date)]

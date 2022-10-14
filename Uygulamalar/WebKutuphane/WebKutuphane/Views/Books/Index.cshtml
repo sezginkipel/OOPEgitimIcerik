@@ -19,7 +19,7 @@
                 @Html.DisplayNameFor(model => model.Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.GenreId)
+                @Html.DisplayNameFor(model => model.Genres.Name)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Author)
@@ -41,7 +41,7 @@
             </td>
 
             <td>
-                @Html.DisplayFor(modelItem => item.GenreId)
+                @Html.DisplayFor(modelItem => item.Genres.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Author)

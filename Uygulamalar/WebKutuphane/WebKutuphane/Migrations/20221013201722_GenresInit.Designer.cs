@@ -12,8 +12,8 @@ using WebKutuphane.Data;
 namespace WebKutuphane.Migrations
 {
     [DbContext(typeof(WebKutuphaneContext))]
-    [Migration("20221013124935_GenreIdAddedBooksModel")]
-    partial class GenreIdAddedBooksModel
+    [Migration("20221013201722_GenresInit")]
+    partial class GenresInit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -37,9 +37,6 @@ namespace WebKutuphane.Migrations
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("GenreId")
-                        .HasColumnType("int");
 
                     b.Property<int>("GenresId")
                         .HasColumnType("int");
@@ -66,7 +63,6 @@ namespace WebKutuphane.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

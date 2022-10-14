@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using WebKutuphane.Data;
 using WebKutuphane.Models;
 
@@ -19,10 +20,10 @@ namespace WebKutuphane.Controllers
             _context = context;
         }
 
-        // GET: Books
+        // GET: Books 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Books.ToListAsync());
+            return View(await _context.Books.Include(m => m.Genres).ToListAsync());
         }
 
         // GET: Books/Details/5
@@ -34,6 +35,7 @@ namespace WebKutuphane.Controllers
             }
 
             var books = await _context.Books
+                .Include(m => m.Genres)
                 .FirstOrDefaultAsync(m => m.Id == id);
 
             if (books == null)
@@ -55,15 +57,14 @@ namespace WebKutuphane.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Author,GenreId,CreatedDate,UpdatedTime")] Books books)
+        public async Task<IActionResult> Create(Books books)
         {
-            if (ModelState.IsValid)
-            {
+          
                 _context.Add(books);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            return View(books);
+            
+           // return View(books);
         }
 
         // GET: Books/Edit/5
@@ -74,7 +75,13 @@ namespace WebKutuphane.Controllers
                 return NotFound();
             }
 
-            var books = await _context.Books.FindAsync(id);
+            var books = await _context.Books.Include(m => m.Genres).FirstOrDefaultAsync(m => m.Id == id);
+            /*
+             var books kısmında FindAsync kullanınca Include çalışmıyor, çünkü FindAsync metodu Dbset
+            içerisinden geliyor ancak Include metodu IQueryable içerisinden geliyor ve birlikte kullanılamıyorlar.  
+             */
+
+
             if (books == null)
             {
                 return NotFound();
@@ -87,14 +94,15 @@ namespace WebKutuphane.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,GenreId,CreatedDate,UpdatedTime")] Books books)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,Genres")] Books books)
         {
+         
             if (id != books.Id)
             {
                 return NotFound();
             }
 
-            if (1==1)
+            if (ModelState.IsValid)
             {
                 try
                 {

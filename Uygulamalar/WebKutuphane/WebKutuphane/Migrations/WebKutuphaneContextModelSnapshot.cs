@@ -36,9 +36,6 @@ namespace WebKutuphane.Migrations
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("GenreId")
-                        .HasColumnType("int");
-
                     b.Property<int>("GenresId")
                         .HasColumnType("int");
 
@@ -64,7 +61,6 @@ namespace WebKutuphane.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
