@@ -1,0 +1,58 @@
+﻿@model WebKutuphane.Models.Books
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "../Shared/_Layout.cshtml";
+
+}
+@Html.Partial("../Components/_Navbar.cshtml")
+<div class="container mt-5">
+
+<h1>Edit</h1>
+
+<h4>Books</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" name="Title" class="form-control" placeholder="@Model.Title" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Genres.Name" class="control-label"></label>
+                <input asp-for="Genres.Name" class="form-control" placeholder="@Model.Genres.Name" />
+                <span asp-validation-for="Genres.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" placeholder="@Model.Author" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" class="form-control" placeholder="@Model.CreatedDate" />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdatedTime" class="control-label"></label>
+                <input asp-for="UpdatedTime" class="form-control" />
+                <span asp-validation-for="UpdatedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+            </div>
