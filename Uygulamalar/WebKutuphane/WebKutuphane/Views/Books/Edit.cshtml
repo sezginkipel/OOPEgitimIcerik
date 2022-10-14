@@ -6,6 +6,7 @@
 
 }
 @Html.Partial("../Components/_Navbar.cshtml")
+<div class="container mt-5">
 
 <h1>Edit</h1>
 
@@ -21,10 +22,12 @@
                 <input asp-for="Title" name="Title" class="form-control" placeholder="@Model.Title" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
+
+
             <div class="form-group">
-                <label asp-for="Genres.Id" class="control-label"></label>
-                <input asp-for="@Model.Genres.Name" class="form-control" placeholder="@Model.Genres.Name" />
-                <span asp-validation-for="Genres.Id" class="text-danger"></span>
+                <label asp-for="Genres.Name" class="control-label"></label>
+                <input asp-for="Genres.Name" class="form-control" placeholder="@Model.Genres.Name" />
+                <span asp-validation-for="Genres.Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Author" class="control-label"></label>
@@ -51,3 +54,5 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
+            </div>

@@ -57,7 +57,7 @@ namespace WebKutuphane.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Books books)
+        public async Task<IActionResult> Create([Bind("Id,Title,Author,Genres")]  Books books)
         {
           
                 _context.Add(books);
