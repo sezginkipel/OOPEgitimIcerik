@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj": {}
+    "C:\\Users\\Sezgin\\Desktop\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj": {
+    "C:\\Users\\Sezgin\\Desktop\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
+        "projectUniqueName": "C:\\Users\\Sezgin\\Desktop\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
         "projectName": "WebKutuphane",
-        "projectPath": "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
-        "packagesPath": "C:\\Users\\ALKU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ALKU\\Documents\\GitHub\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\obj\\",
+        "projectPath": "C:\\Users\\Sezgin\\Desktop\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\WebKutuphane.csproj",
+        "packagesPath": "C:\\Users\\Sezgin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sezgin\\Desktop\\OOPEgitimIcerik\\Uygulamalar\\WebKutuphane\\WebKutuphane\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ALKU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sezgin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

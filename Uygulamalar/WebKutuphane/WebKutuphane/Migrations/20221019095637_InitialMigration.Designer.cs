@@ -12,8 +12,8 @@ using WebKutuphane.Data;
 namespace WebKutuphane.Migrations
 {
     [DbContext(typeof(WebKutuphaneContext))]
-    [Migration("20221013201722_GenresInit")]
-    partial class GenresInit
+    [Migration("20221019095637_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

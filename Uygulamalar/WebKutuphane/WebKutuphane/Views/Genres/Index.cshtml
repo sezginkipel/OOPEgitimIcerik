@@ -1,0 +1,48 @@
+﻿@model IEnumerable<WebKutuphane.Models.Genres>
+
+@{
+	Layout = "../Shared/_Layout.cshtml";
+
+	ViewData["Title"] = "Index";
+}
+@Html.Partial("../Components/_Navbar.cshtml")
+
+<div class="container mt-5">
+
+	<div class="grid">
+		<h1 class="g-col-4">Kitap Türleri</h1>
+
+		<p class="g-col-4">
+			<a asp-action="Create" class="btn btn-primary">Yeni Tür Ekle</a>
+		</p>
+	</div>
+
+	<hr />
+
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>
+					Tür İsmi
+				</th>
+				<th>İşlemler</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td class="">
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td>
+						<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Düzenle</a>
+						<a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary">Detaylar</a>
+						<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Sil</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>

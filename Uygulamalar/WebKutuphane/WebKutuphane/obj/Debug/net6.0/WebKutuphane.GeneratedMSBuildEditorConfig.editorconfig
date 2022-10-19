@@ -8,49 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebKutuphane
 build_property.RootNamespace = WebKutuphane
-build_property.ProjectDir = C:\Users\ALKU\Documents\GitHub\OOPEgitimIcerik\Uygulamalar\WebKutuphane\WebKutuphane\
+build_property.ProjectDir = C:\Users\Sezgin\Desktop\OOPEgitimIcerik\Uygulamalar\WebKutuphane\WebKutuphane\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ALKU\Documents\GitHub\OOPEgitimIcerik\Uygulamalar\WebKutuphane\WebKutuphane
+build_property.MSBuildProjectDirectory = C:\Users\Sezgin\Desktop\OOPEgitimIcerik\Uygulamalar\WebKutuphane\WebKutuphane
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Create.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Delete.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Details.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Edit.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Index.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Books/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Components/_Navbar.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Components/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xfTmF2YmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Home/Index.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Genres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Genres/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Genres/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Genres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Genres/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Shared/_Layout.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALKU/Documents/GitHub/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/_ViewImports.cshtml]
+[C:/Users/Sezgin/Desktop/OOPEgitimIcerik/Uygulamalar/WebKutuphane/WebKutuphane/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -2,10 +2,46 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    Layout = "../Shared/_Layout.cshtml";
-}
+	Layout = "../Shared/_Layout.cshtml";
 
+	ViewData["Title"] = "Ana Sayfa";
+}
 @Html.Partial("../Components/_Navbar.cshtml")
 
+<div class="container mt-5 grid">
+
+	<div class="row">
+
+		<div class="card text-center col-5">
+			<div class="card-header">
+				Kitaplar
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">Bu kategori altında kitapları görebilirsiniz.</h5>
+				<p class="card-text">Kitaplar bölümü hakkında daha fazla bilgi.</p>
+				<a href="/Books" class="btn btn-primary">Tüm Kitapları Gör</a>
+			</div>
+			<div class="card-footer text-muted">
+				Web Kütüphane
+			</div>
+		</div>
+
+		<div class="card text-center col-5">
+			<div class="card-header">
+				Kitap Türleri
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">Bu kategori altında kitap türlerini görebilirsiniz.</h5>
+				<p class="card-text">Kitap türleri hakkında daha fazla bilgi.</p>
+				<a href="/Genres" class="btn btn-primary">Tüm Türleri Gör</a>
+			</div>
+			<div class="card-footer text-muted">
+				Web Kütüphane
+			</div>
+		</div>
+
+	</div>
 
 
+
+</div>

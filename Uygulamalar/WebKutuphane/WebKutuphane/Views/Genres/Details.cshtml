@@ -1,0 +1,30 @@
+﻿@model WebKutuphane.Models.Genres
+
+@{
+	Layout = "../Shared/_Layout.cshtml";
+
+	ViewData["Title"] = "Details";
+}
+@Html.Partial("../Components/_Navbar.cshtml")
+
+<div class="container mt-5">
+
+
+	<h1>Detaylar</h1>
+	<hr />
+
+	<div>
+		<dl class="row">
+			<dt class="col-sm-2">
+				Tür Adı
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Name)
+			</dd>
+		</dl>
+	</div>
+	<div>
+		<a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary mt-2">Düzenle</a>
+		<a asp-action="Index" class="btn btn-secondary mt-2">Listeye dön</a>
+	</div>
+</div>
